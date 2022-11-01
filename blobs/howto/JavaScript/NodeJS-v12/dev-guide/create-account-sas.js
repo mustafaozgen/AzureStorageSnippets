@@ -41,7 +41,7 @@ async function useSasToken(sasToken) {
 //</Snippet_UseSas>
 
 //<Snippet_GetSas>
-async function createAccountSas() {
+function createAccountSas() {
 
     const sasOptions = {
 
@@ -68,7 +68,7 @@ async function createAccountSas() {
 //<Snippet_AsyncBoilerplate>
 async function main() {
 
-    const sasToken = await createAccountSas();
+    const sasToken = createAccountSas();
 
     await useSasToken(sasToken);
 }
